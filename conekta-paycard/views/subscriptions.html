@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang='en'></html>
+<head>
+  <meta charset='UTF-8'>
+  <title>Documentación</title>
+  <link href='../assets/styles/styles.css' rel='stylesheet'>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  <script src='../assets/javascripts/examples.js'></script>
+  <script src='../assets/javascripts/jquery.formatter.js'></script>
+</head>
+<body>
+  <header>
+    <div class='wrapper'>
+      <a class='title' href='/' title='Ir al inicio'>
+        <h1>
+          <span class='brand_symbol'></span>
+          <span class='header_loc'>Developer Examples</span>
+        </h1>
+      </a>
+      <ul class='nav_links'>
+        <li>
+          <a href=''>Documentación</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class='content' id='card'>
+    <ul class='versions'>
+      <h3>Suscripciones</h3>
+      <li class='version' id='basic'>Llamada básica</li>
+      <li class='version' id='advanced'>Llamada avanzada</li>
+    </ul>
+    <form action=''>
+      <h1>Plan Básico Anual</h1>
+      <hgroup>
+        <h2>Agosto 2014 - Julio 2015</h2>
+        <h3>Incluye periodo de Prueba de 15 días.</h3>
+      </hgroup>
+      <fieldset class='basic'>
+        <div class='input_box'>
+          <label for='customer_name'>Nombre del Tarjetahabiente</label>
+          <input name='customer_name' type='text'>
+        </div>
+        <div class='input_box'>
+          <label for='card_number'>Número de tarjeta (sin guiones)</label>
+          <input name='card_number' placeholder='' type='text'>
+        </div>
+        <div class='input_box'>
+          <label for='card_exp'>F. de Expiración</label>
+          <input name='card_exp' placeholder='' type='text'>
+        </div>
+        <div class='input_box'>
+          <label for='card_cvc'>Cód. de Seguridad</label>
+          <input name='card_cvc' placeholder='' type='text'>
+        </div>
+      </fieldset>
+      <fieldset class='advanced'>
+        <div class='input_box'>
+          <label for='customer_email'>E-mail</label>
+          <input name='customer_email' type='text'>
+        </div>
+        <div class='input_box'>
+          <label for='customer_phone'>Teléfono</label>
+          <input name='customer_phone' type='text'>
+        </div>
+        <div class='input_box'>
+          <label for=''>Dirección</label>
+          <input name='' type='text'>
+        </div>
+        <div class='input_box'>
+          <label for=''>Código Postal</label>
+          <input name='' type='text'>
+        </div>
+      </fieldset>
+      <fieldset class='actions'>
+        <button type='submit'>Pagar e iniciar Suscripción</button>
+      </fieldset>
+    </form>
+    <div class='help'>
+      <h3>Ayuda</h3>
+      <p>
+        Consulta el tutorial para aprender a integrar este método de pago.
+        <br>
+        <a href='https://www.conekta.io/es/docs/tutoriales/suscripciones' target="_blank">Ver tutorial</a>
+      </p>
+    </div>
+    <div class='error_msg'>
+      <h3>Mensaje de error</h3>
+      <p>Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas.</p>
+    </div>
+    <div class='success_msg'>
+      <h3>Suscripción Exitosa</h3>
+      <p>La suscripción se ha realizado con éxito:</p>
+      <dl>
+        <dt>ID de Transacción</dt>
+        <dd>53b060e9d7e1a0a0cc000b49</dd>
+        <dt>Cód. de Autorización</dt>
+        <dd>633380</dd>
+        <dt>Fecha del Primer Cargo</dt>
+        <dd>Domingo 18/08/14 a las 13:06</dd>
+        <dt>Fecha del Próximo Cargo</dt>
+        <dd>Domingo 18/09/14</dd>
+      </dl>
+    </div>
+  </div>
+  <footer>
+    <ul>
+      <li>
+        <a href='cards.html' target="_self">Pagos con Tarjetas</a>
+      </li>
+      <li>
+        <a href='cash.html' target="_self">Pagos en Efectivo</a>
+      </li>
+      <li>
+        <a href='spei.html' target="_self">Pagos vía SPEI</a>
+      </li>
+      <li>
+        <a href='on-demand.html' target="_self">Pagos On-demand</a>
+      </li>
+      <li>
+        <a href='sibscriptions.html' target="_self">Suscripciones</a>
+      </li>
+    </ul>
+  </footer>
+</body>

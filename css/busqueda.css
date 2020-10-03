@@ -1,0 +1,158 @@
+#titulo-resultado{
+    color:#888;
+}
+.item-resultado{
+    margin-top:15px;
+    margin-bottom: 30px;
+    background-color: white; 
+    min-height: 60px; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+a{
+  text-decoration: none;
+}
+.ajusta-margen{
+    padding: 15px;
+}
+.imagen-resultado{
+    width: 100%;
+    max-width: 200px;
+    transition: transform .2s;
+    margin-top: 25px;
+}
+.imagen-resultado:hover {
+    transform: scale(2.5); 
+  }
+  .resultado-clave-producto{
+    color:#9E1F1A;
+    font-weight: bold; 
+    font-size: 1.3rem;
+    margin-bottom: 3px;
+    margin-top: 3px;
+  }
+  .resultado-desc-producto{
+    color:#666; 
+    font-size: 0.7rem;
+    margin-bottom: 5px;
+    margin-top: 3px;
+  }
+  #cuerpo-resultado{
+    color:#888; 
+    padding-bottom: 20px; 
+    border-bottom: 1px solid #ddd; 
+    margin-bottom: 20px;
+  }
+  .resultado-cuadro-unidad{
+    border: 1px #9E1F1A solid;
+    color:#9E1F1A;
+    font-size: 0.6rem;
+    padding:3px;
+    width: 55px;
+    margin:0;
+    text-align: center;
+  }
+  .resultado-linea{
+    margin-top: 30px;
+    text-align: center;
+  }
+  .resultado-marca{
+    margin-top: 25px;
+    width: 100%;
+    max-width: 60px;
+  }
+  .centra{
+    text-align: center;
+  }
+  .resultado-precio{
+    margin-top: 35px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bolder;
+    line-height: 0.8rem;
+  }
+  .resultado-cantidad{
+    margin: 20px auto;
+    width: 60px;
+  }
+  .resultado-agregar{
+    margin-top: 25px;
+    font-size: 0.7rem;
+  }
+  #resultado-de-busqueda{
+    font-size:1.2rem;
+    text-align: left;
+  }
+  #filtro-busqueda{
+    display: block !important; 
+    text-align: right;
+    font-size: 0.9rem;
+  }
+  #campo-filtro{
+    margin-left:10px; 
+  }
+  .precio-anterior{
+    text-decoration:line-through;
+    font-size: 0.8rem;
+    color: #999;
+  }
+  .page-link{
+    color: black;
+  }
+  .page-link:hover{
+    color: black;
+    background-color: transparent;
+  }
+  .page-item.active .page-link{
+    background-color: #666;
+    border: 0;
+    color:white;
+  }
+  #barra-busqueda{
+    margin-left: 10px;
+  }
+  @media(max-width: 576px) {
+    .item-resultado{
+      text-align: center;
+    }
+    #titulo-resultado{
+      display: none;
+    }
+    .resultado-cuadro-unidad{
+      margin:0 auto;
+    }
+    #resultado-de-busqueda{
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: bolder;
+    }
+    #filtro-busqueda{
+      text-align: center;
+      line-height: 1.5rem;
+    }
+    #campo-filtro{
+      margin:15px auto;
+      width: 80%;
+      
+    }
+    .imagen-resultado:hover {
+      transform: scale(1.0); 
+    }
+    #cuerpo-resultado{
+      border-bottom: 0; 
+    }
+    .resultado-agregar{
+      margin-top: 22px;
+      font-size:0.75rem;
+    }
+    #barra-busqueda{
+      margin-left: 0px;
+    }
+
+  }
+  .idUser{
+    display: none;;
+  }
+  .alerta_display {
+    display: block!important;
+  }

@@ -1,0 +1,174 @@
+.margen-top{
+    margin-top:120px;
+}
+#carrito-status{
+    text-align:center;
+    font-size:0.8rem;
+    color:#999;
+}
+#carrito-status .proceso{
+    width:20%;
+    display: inline-block;
+    
+}
+#carrito-status .separador{
+    width:4%;
+    display: inline-block;  
+}
+#carrito-status .separador hr{
+    margin-top: -34px;
+}
+.statusactivo{
+    opacity: 1;
+    color:rgb(158, 31, 26);
+}
+.separador-activo{
+    border-top: 1px solid rgb(158, 31, 26);
+}
+.icono-status{
+    width: 20%;
+    margin-bottom: 10px;
+}
+.direccion-envio{
+    text-align: left;
+    
+}
+.opcion-envio{
+    color:#666;
+    transition: 0.3s;
+    font-size: 0.9rem;
+    padding:15px;
+    cursor: pointer;
+    margin: 0 auto;
+    width:80%;
+}
+.opcion-envio:hover{
+border-radius: 5px; 
+background-color:#EADADC;
+color:rgb(158, 31, 26);
+} 
+.opcion-envio-activa{
+border-radius: 5px; 
+background-color:#EADADC;
+color:rgb(158, 31, 26);
+font-size: 0.9rem;
+padding:15px;
+cursor: pointer;
+margin: 0 auto;
+width:80%;
+}
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+    position:   fixed;
+    z-index:    1030;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('../img/cargando.gif') 
+                50% 50% 
+                no-repeat;
+}
+.caja-blanca{
+    background-color:white; 
+    padding:20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.icono-envio{
+    width:30px;
+    margin-bottom: 10px;
+  fill: currentColor;
+}
+h5{
+    color:#777;
+}
+#cuadro-resumen{
+    width:90%; 
+    margin:0 auto;
+    color:#777;  
+}
+#cuadro-resumen .row{
+    padding:18px;
+}
+#costo-total{
+    background-color:#eee;
+    border-radius:6px;
+    font-weight: bolder;
+    color:rgb(158, 31, 26);
+}
+.imagen-carrito{
+    width:100%;
+    transition: 0.5s;
+}
+.imagen-carrito:hover{
+    transform: scale(2.5);
+    z-index: 1000;
+}
+#titulo-productos-carrito{
+    color:#777;  
+}
+.producto-carrito{
+    text-align: left;
+}
+.cantidad-carrito select{
+    width:70%;
+    margin: 0 auto;
+}
+.subtotal-carrito{
+    font-size:0.99rem;
+    text-align:right;
+}
+
+@media(max-width: 576px) {
+    .icono-status{
+        width: 50%;
+    }
+    .imagen-carrito:hover{
+        transform: scale(1);
+    }
+    #titulo-productos-carrito,#linea-titulos-carrito{
+        display: none;
+    }
+    .imagen-carrito{
+        width: 33%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .producto-carrito{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    .cantidad-carrito select{
+        width:60px;
+        margin: 0 auto;
+    }
+    .subtotal-carrito{
+        font-size:0.99rem;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .direccion-envio{
+    text-align:center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+  }
+
+/* ENvio */
+#codigo_postal.cp_error{
+    border: 1px solid red;
+}
+#telefono.tel_error{
+    border: 1px solid red;
+}
